@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Categories</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color : #c7e8f3;;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 6px 15px rgba(29, 183, 230, 0.754);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+     @media (max-width: 900px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+     @media (max-width: 500px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .clothing { background-color: #c2db1d; }
+    .electronics { background-color: #c13535; }
+    .furniture { background-color: #f38435; }
+    .beauty { background-color: #f188be; }
+    .grocery { background-color: #42be46; }
+    .mobile { background-color: #5dc7ca; }
+    .books { background-color: #b0bb3b; }
+    .sports { background-color: #1dd4c2; }
+    .toys { background-color: #7144c5; }
+
+    @media (max-width: 900px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Shop by Category</h1>
+
+  <div class="grid-container">
+
+    <div class="card clothing">
+      <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png">
+      <h3>Clothing</h3>
+    </div>
+
+    <div class="card electronics">
+      <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png">
+      <h3>Electronics</h3>
+    </div>
+
+    <div class="card furniture">
+      <img src="https://cdn-icons-png.flaticon.com/512/2933/2933181.png">
+      <h3>Furniture</h3>
+    </div>
+
+    <div class="card beauty">
+      <img src="https://cdn-icons-png.flaticon.com/512/3082/3082011.png">
+      <h3>Beauty</h3>
+    </div>
+
+    <div class="card grocery">
+      <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png">
+      <h3>Grocery</h3>
+    </div>
+
+    <div class="card mobile">
+      <img src="https://cdn-icons-png.flaticon.com/512/545/545245.png">
+      <h3>Mobiles</h3>
+    </div>
+
+    <div class="card books">
+      <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png">
+      <h3>Books</h3>
+    </div>
+
+    <div class="card sports">
+      <img src="https://cdn-icons-png.flaticon.com/512/857/857455.png">
+      <h3>Sports</h3>
+    </div>
+
+    <div class="card toys">
+      <img src="https://cdn-icons-png.flaticon.com/512/3082/3082033.png">
+      <h3>Toys</h3>
+    </div>
+
+  </div>
+
+</body>
+</html>
